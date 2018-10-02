@@ -3,7 +3,7 @@
 This is the repository for the ServrLink public plugin that is installed on public Minecraft servers. It features a developer API that can be used to query a [Registry](https://github.com/ServrLink/Registry), as well as providing a /link command that provides players with instructions on how to link their accounts.  
   
 # Javadocs  
-You can view the Javadocs for the API [here](https://servrlink.github.io/Plugin/docs/).  
+You can view the Javadocs for the API [here](https://servrlink.github.io/Plugin/).  
   
 # Example  
   
