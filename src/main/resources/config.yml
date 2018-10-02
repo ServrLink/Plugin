@@ -1,0 +1,3 @@
+link-command:
+  message: 'Click on this message to visit the ServrLink website for information on linking your account' # An alternative message would instruct the user to join the verification server straight away
+  url: 'https://servr.link'

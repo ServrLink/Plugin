@@ -1,0 +1,6 @@
+name: ServrLink
+main: link.servr.servrlink.spigot.SpigotServrLink
+version: 1.0
+commands:
+  link:
+    default: true
