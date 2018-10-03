@@ -58,7 +58,7 @@ try {
   // Synchronously get a Discord ID by Minecraft UUID  
   RetrievedID retrievedID = api.getDiscordID(minecraftUuid);  
   success = retrievedID.success; // Returns true if the request to the Registry was made successfully  
-  Long id = retrievedID.id; // The associated Discord ID. Do not use the primitive long type, as a null value will be returned if the Minecraft UUID was not present in the registry  
+  String id = retrievedID.id; // The associated Discord ID. A null value will be returned if the Minecraft UUID was not present in the registry
   
  // Synchronously get a Minecraft UUID by Discord ID  
   RetrievedUUID retrievedUUID = api.getUUID(discordId);  
@@ -70,7 +70,7 @@ try {
      @Override  
      public void run(RetrievedID retrievedID) {  
        boolean success = retrievedID.success; // Returns true if the request to the Registry was made successfully  
-       Long id = retrievedID.id; // The associated Discord ID. Do not use the primitive long type, as a null value will be returned if the Minecraft UUID was not present in the registry  
+       String id = retrievedID.id; // The associated Discord ID. A null value will be returned if the Minecraft UUID was not present in the registry
     }  
   
     // Ran if any exceptions occur while processing the request  
