@@ -14,7 +14,7 @@ plugins {
 }
 
 group 'link.servr.servrlink'
-version '1.0-SNAPSHOT'
+version '1.1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
