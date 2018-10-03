@@ -95,14 +95,10 @@ public class ServrLinkAPI {
         JSONObject json = new JSONObject(res);
 
         boolean success = json.getBoolean("success");
-        String idStr = json.getString("id");
+        String id = json.getString("id");
 
-        Long id; // Primitives cannot be null
-        try {
-            id = Long.parseLong(idStr);
-        } catch(IllegalArgumentException ex) { // Occurs if the user is not registered
+        if(id.isEmpty())
             id = null;
-        }
 
         return new RetrievedID(success, id);
     }

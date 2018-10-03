@@ -11,9 +11,9 @@ public class RetrievedID {
      * The user's Discord ID.
      * null if the user is not registered
      */
-    public Long id;
+    public String id;
 
-    public RetrievedID(boolean success, Long id) {
+    public RetrievedID(boolean success, String id) {
         this.success = success;
         this.id = id;
     }
