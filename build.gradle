@@ -23,11 +23,16 @@ repositories {
     mavenCentral()
     maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
     maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven {
+        name 'velocity'
+        url 'https://repo.velocitypowered.com/snapshots/'
+    }
 }
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.13-R0.1-SNAPSHOT'
-
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    compile 'com.velocitypowered:velocity-api:1.0.0-SNAPSHOT'
     compile "org.json:json:+"
 }
 
