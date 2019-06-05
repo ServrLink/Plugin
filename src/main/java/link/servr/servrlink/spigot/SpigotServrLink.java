@@ -1,5 +1,6 @@
 package link.servr.servrlink.spigot;
 
+import link.servr.servrlink.core.ConfigManager;
 import link.servr.servrlink.core.Core;
 import link.servr.servrlink.core.ServrLink;
 import net.md_5.bungee.api.ChatColor;
@@ -21,6 +22,7 @@ public class SpigotServrLink extends JavaPlugin implements ServrLink {
     @Override
     public void onEnable() {
         core = new Core(this);
+        Core.getInstance().configManager = new ConfigManager("config.yml", Core.getInstance().servrLink.getDirectory());
         core.run();
     }
 

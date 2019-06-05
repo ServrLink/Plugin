@@ -13,9 +13,7 @@ public class Core implements Runnable {
 
     public Core(ServrLink servrLink) {
         core = this;
-
         this.servrLink = servrLink;
-        this.configManager = new ConfigManager("config.yml", servrLink.getDirectory());
     }
 
     @Override
